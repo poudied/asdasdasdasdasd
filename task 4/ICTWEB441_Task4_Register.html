@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ICTWEB441_Task4.css">
+    <title>Register</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Registration Form</h1>
+        <div class="desc">Please complete the following form to register for an account on our website.</div>
+    </div>
+    <div class="menu">
+        <ul class="nav_links">
+            <li><a href="ICTWEB441_Task4_Home.html">Home</a></li>
+            <li><a href="ICTWEB441_Task4_About.html">About</a></li>
+            <li><a href="ICTWEB441_Task4_Contact Us.html">Contact Us</a></li>
+            <li><a href="ICTWEB441_Task4_Products.html">Products</a></li>
+            <li><a href="ICTWEB441_Task4_Register.html">Register</a></li>
+        </ul>
+        
+        <div class="logo">
+            <img class="logo" src="/Resources/LOGO/4phonesLogo.png">
+        </div>
+        <div class="searchBox">
+            <input>
+            <button>Search</button>
+        </div>
+    </div>
+    <div class="mega">
+        <div class="main">
+            <form>
+                <table>
+                    <tr>
+                        <td><label for="username">Username</label></td>
+                        <td><input type="text" id="username" name="username"><label style="color:red;" id="errorUsername">*</label></td>
+                    </tr>
+                    <tr>
+                        <td><label for="emailR">Email Address</label></td>
+                        <td><input type="email" id="emailR" name="emailR"><label style="color:red;" id="errorEmailR">*</label></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Password</label></td>
+                        <td><input type="password" id="password" name="password"><label style="color:red;" id="errorPassword">*</label></td>
+                    </tr>
+                    <tr>
+                        <td><label for="cpassword">Confirm Password</label></td>
+                        <td><input type="password" id="cpassword" name="cpassword"><label style="color:red;" id="errorcPassword">*</label></td>
+                    </tr>
+                    <tr>
+                        <td><label for="fName">First Name</label></td>
+                        <td><input type="text" id="fName" name="fName"><label style="color:red;" id="errorfName">*</label></td>
+                    </tr>
+                    <tr>
+                        <td><label for="surname">Surname</label></td>
+                        <td><input type="text" id="surname" name="surname"><label style="color:red;" id="errorSurname">*</label></td>
+                    </tr>
+                    <tr>
+                        <td><label for="gender">Gender</label></td>
+                        <td>
+                            <input type="radio" id="male" name="gender">
+                            <label for="male">Male</label><br>
+                            <input type="radio" id="female" name="gender">
+                            <label for="female">Female</label>
+                            <label style="color:red;" id="errorGender">*</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="address">Address</label></td>
+                        <td><input type="text" id="address" name="address">
+                            <label style="color:red;" id="errorAddress">*</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="suburb">Suburb</label></td>
+                        <td><input type="text" id="suburb" name="suburb">
+                            <label style="color:red;" id="errorSuburb">*</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="postcode">Postcode</label></td>
+                        <td><input type="number" id="postcode" name="postcode">
+                            <label style="color:red;" id="errorPostcode">*</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="state">State</label></td>
+                        <td>
+                            <select id="state" name="state">
+                                <option value="NSW">NSW</option>
+                                <option value="NT">NT</option>
+                                <option value="QL">QL</option>
+                                <option value="SA">SA</option>
+                                <option value="TS">TS</option>
+                                <option value="VI">VI</option>
+                                <option value="WA">WA</option>
+                            </select>
+                            <label style="color:red;" id="errorState">*</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="pNumberR">Phone Number</label></td>
+                        <td><input type="number" id="pNumberR" name="pNumberR">
+                            <label style="color:red;" id="errorpNumberR">*</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button id="clear" type="reset" value="clear">Clear</button>
+                        </td>
+                        <td>
+                            <button id="submit" onclick="return validateUserDataReg()">Submit</button>
+                        </td>
+                        
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div class="aside">
+            <h2 class="purchase">Purchases</h2>
+            <table>
+                <tr>
+                    <th>0 Items</th>
+                    <th>Cart sub-total: $0</th>
+                </tr>
+                <tr>
+                    <th colspan="2">
+                        <button>Checkout</button>
+                    </th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>&#169; 2023 Crisdyen. All rights reserved.</p>
+    </div>
+
+    <script src="ICTWEB441_Task4.js"></script>
+</body>
+</html>

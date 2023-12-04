@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ICTWEB441_Task4.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Contact Us Form</h1>
+        <div class="desc">Please complete the following form to send your questions/inquiry
+        to us.</div>
+    </div>
+    <div class="menu">
+        <ul class="nav_links">
+            <li><a href="ICTWEB441_Task4_Home.html">Home</a></li>
+            <li><a href="ICTWEB441_Task4_About.html">About</a></li>
+            <li><a href="ICTWEB441_Task4_Contact Us.html">Contact Us</a></li>
+            <li><a href="ICTWEB441_Task4_Products.html">Products</a></li>
+            <li><a href="ICTWEB441_Task4_Register.html">Register</a></li>
+        </ul>
+        
+        <div class="logo">
+            <img class="logo" src="/Resources/LOGO/4phonesLogo.png">
+        </div>
+        <div class="searchBox">
+            <input>
+            <button>Search</button>
+        </div>
+    </div>
+    <div class="mega">
+        <div class="main">
+            <form novalidate>
+                <table>
+                    <tr>
+                        <td><label for="name">Name</label></td>
+                        <td><input type="text" name="name" id="name"><label style="color:red;" id="errorName">*</label></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email Address</label></td>
+                        <td><input type="email" name="email" id="email"><label style="color:red;" id="errorEmail">*</label></td>
+                    </tr>
+                    <tr>
+                        <td><label for="pNumber">Phone number</label></td>
+                        <td><input type="number" name="pNumber" id="pNumber"><label style="color:red;" id="errorpNumber">*</label></td>
+                    </tr>
+                    <tr>
+                        <td><label for="message">Message</label></td>
+                        <td><input type="text" name="message" id="message"><label style="color:red;" id="errorMessage">*</label></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button id="clear" type="reset" value="clear" >Clear</button>
+                        </td>
+                        <td>
+                            <button id="register" onclick="return validateUserData()">Register</button>
+                        </td>
+                    </tr>
+
+                </table>
+            </form>
+        </div>
+        <div class="aside">
+            <h2 class="purchase">Purchases</h2>
+            <table>
+                <tr>
+                    <th>0 Items</th>
+                    <th>Cart sub-total: $0</th>
+                </tr>
+                <tr>
+                    <th colspan="2">
+                        <button>Checkout</button>
+                    </th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>&#169; 2023 Crisdyen. All rights reserved.</p>
+    </div>
+
+    <script src="ICTWEB441_Task4.js"></script>
+</body>
+</html>
